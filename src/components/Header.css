@@ -30,20 +30,27 @@
   justify-content: space-between;
   padding: 10px 20px;
 }
-
+/* 
 .right-element {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .right-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-right: 10px;
 }
 
 span {
   color: white;
   text-align: center;
+}
+.subscribe-field {
+  width: 150px;
+  color: white;
+  background-color: black;
+  margin-top: 10px;
 }

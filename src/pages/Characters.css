@@ -2,25 +2,12 @@
   width: 100%; /* Make the image take full width */
   height: 300px; /* Maintain the aspect ratio */
 }
-.container-chara {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 100%;
-  margin: 10px auto;
-}
-.character-box {
-  flex: 0 0 calc(20% - 10px);
-  margin-bottom: 20px;
-  text-align: center;
-}
 img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
-
 h2,
 h3,
 p,
@@ -42,13 +29,27 @@ h3 {
 }
 
 .container-chara > p {
-  font-size: 18px;
-  /* font-style: italic; */
+  font-size: 14px;
   font-weight: 250;
   text-align: left;
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.container-chara {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 10px auto;
+}
+.character-box {
+  flex: 0 0 calc(20% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+  text-align: left;
+}
+
 .page-number {
   font-size: 16px;
   color: white;

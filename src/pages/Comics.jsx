@@ -1,3 +1,4 @@
+import "./Comics.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -55,7 +56,6 @@ const Comics = () => {
                 src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
                 alt={comic.title}
               />
-
               <h3>{comic.title}</h3>
               <p>{comic.description}</p>
             </div>

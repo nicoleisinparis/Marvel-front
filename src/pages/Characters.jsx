@@ -1,5 +1,4 @@
 import "./Characters.css";
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -7,7 +6,7 @@ const Characters = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const imgsPerPage = 20;
+  const imgsPerPage = 10;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -63,7 +62,6 @@ const Characters = () => {
                   src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
                   alt={character.name}
                 />
-
                 <h3>{character.name}</h3>
                 <p>{character.description}</p>
               </div>

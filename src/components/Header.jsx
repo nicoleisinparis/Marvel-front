@@ -1,8 +1,16 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
 import marvelLogo from "../assets/marvel-logo.png";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [subVisible, setSubVisible] = useState(false); // State variable to control visibility
+
+  // Function to toggle visibility of the subscription field
+  const showSubsField = () => {
+    setSubVisible(!subVisible);
+  };
+
   return (
     <header className="header">
       <div className="inner-header">
@@ -17,7 +25,7 @@ const Header = () => {
             border: "1px solid rgb(143, 4, 4)",
           }}
         />
-        <Link to="./home">
+        <Link to="/Home">
           <img
             src={marvelLogo}
             alt="Marvel Logo"
@@ -33,9 +41,19 @@ const Header = () => {
             />
             <p>Marvel Unlimited</p>
           </div>
-          <Link to="./Subscribe">
-            <span>Subscribe</span>
-          </Link>
+
+          <span onClick={showSubsField} style={{ cursor: "pointer" }}>
+            Subscribe
+          </span>
+          <div>
+            {subVisible && (
+              <input
+                className="subscribe-field"
+                type="text"
+                placeholder="Enter your email & press enter"
+              />
+            )}
+          </div>
         </div>
       </div>
     </header>
