@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+}
+.container > h1 {
+  font-family: "Fugaz One", cursive;
+  margin: 50px;
+  animation: flash 4s infinite;
+  color: rgb(255, 7, 7);
+  font-size: 100px;
+  text-shadow: 2px 2px 4px yellow;
+  animation: shake 0.2s ease infinite;
+}
+.img {
+  margin-top: 20px;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 0);
+  }
+  25% {
+    transform: translate(-1px, 0);
+  }
+  50% {
+    transform: translate(1x, 0);
+  }
+  75% {
+    transform: translate(-1px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

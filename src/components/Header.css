@@ -1,0 +1,49 @@
+.header {
+  border-bottom: 4px solid red;
+  animation: flash 2s infinite;
+}
+
+@keyframes flash {
+  0% {
+    border-bottom-color: rgb(143, 4, 4);
+  }
+  20% {
+    border-bottom-color: rgb(255, 183, 0);
+  }
+  40% {
+    border-bottom-color: rgb(255, 255, 0);
+  }
+  60% {
+    border-bottom-color: rgb(4, 194, 4);
+  }
+  80% {
+    border-bottom-color: rgb(32, 53, 243);
+  }
+  100% {
+    border-bottom-color: rgb(202, 6, 202);
+  }
+}
+
+.inner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.right-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+span {
+  color: white;
+  text-align: center;
+}
