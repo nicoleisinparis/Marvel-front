@@ -11,7 +11,9 @@ const Comics = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/comics");
+        const response = await axios.get(
+          "https://site--marvel-back--gxc5dm2v6kbx.code.run/comics"
+        );
 
         console.log(response.data);
         setData(response.data.results || []);
