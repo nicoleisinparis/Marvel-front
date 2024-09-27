@@ -8,7 +8,10 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-
+h2,
 span {
   font-family: "SUSE", sans-serif;
+}
+h2 {
+  font-size: 28px;
 }
